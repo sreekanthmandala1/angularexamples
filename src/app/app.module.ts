@@ -8,6 +8,9 @@ import { StringinterpolationComponent } from './stringinterpolation/stringinterp
 import { PropertybindingComponent } from './propertybinding/propertybinding.component';
 import { EventbindingComponent } from './eventbinding/eventbinding.component';
 import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component';
+import { NgforNgifComponent } from './ngfor-ngif/ngfor-ngif.component';
+
+
 
 @NgModule({
   declarations: [
@@ -16,7 +19,8 @@ import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component'
     StringinterpolationComponent,
     PropertybindingComponent,
     EventbindingComponent,
-    TwowaybindingComponent
+    TwowaybindingComponent,
+    NgforNgifComponent,
   ],
   imports: [
     BrowserModule,
