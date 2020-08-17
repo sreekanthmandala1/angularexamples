@@ -1,13 +1,17 @@
 <button class="btn btn-primary" (click)="onlyOdd=!onlyOdd">only Odd</button>
 <ul class="list-group">
   <div *ngIf="onlyOdd">
-    <li class="list-group-item" *ngFor="let odd of oddNumbers">
+    <li class="list-group-item" [ngClass]="{odd: odd % 2 !==0}"
+    [ngStyle]="{backgroundColor: odd % 2 !==0 ? 'yellow' : 'transparent'}" *ngFor="let odd of oddNumbers">
       {{odd}}
     </li>
   </div>
   <div *ngIf="!onlyOdd">
-    <li class="list-group-item" *ngFor="let even of evenNumbers">
+    <li class="list-group-item" [ngClass]="{even: even % 2 ==0}" [ngStyle]="{backgroundColor: even % 2 ==0 ? 'green' : 'transparent'}"*ngFor="let even of evenNumbers">
       {{even}}
     </li>
   </div>
 </ul>
+<p appBasicHighlight>style me with basicHighlightDirective</p>
+
+<p appRend>style me with anotherBasic</p>

@@ -9,6 +9,13 @@ import { PropertybindingComponent } from './propertybinding/propertybinding.comp
 import { EventbindingComponent } from './eventbinding/eventbinding.component';
 import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component';
 import { NgforNgifComponent } from './ngfor-ngif/ngfor-ngif.component';
+import {BasicHighlightDirective} from './basic-highlight/basic.highlight.directive';
+import { RendDirective } from './rend/rend.directive';
+
+
+
+
+
 
 
 
@@ -21,6 +28,12 @@ import { NgforNgifComponent } from './ngfor-ngif/ngfor-ngif.component';
     EventbindingComponent,
     TwowaybindingComponent,
     NgforNgifComponent,
+    BasicHighlightDirective,
+    RendDirective,
+
+
+
+
   ],
   imports: [
     BrowserModule,
